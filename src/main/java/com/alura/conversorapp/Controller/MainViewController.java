@@ -11,6 +11,8 @@ public class MainViewController {
     @FXML
     private Pane scene1Pane;
 
+
+
     public void onSwitch2Click(ActionEvent actionEvent) throws IOException {
         new SceneSwitch(scene1Pane, "History.fxml");
     }

@@ -1,6 +1,8 @@
 module com.alura.conversorapp {
     requires javafx.controls;
     requires javafx.fxml;
+    requires java.net.http;
+    requires com.google.gson;
 
 
     opens com.alura.conversorapp to javafx.fxml;
