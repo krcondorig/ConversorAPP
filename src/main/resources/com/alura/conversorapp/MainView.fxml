@@ -16,7 +16,7 @@
          <Font name="Arial Black" size="36.0" />
       </font>
    </Label>
-   <Button fx:id="btnHistorial" alignment="CENTER" contentDisplay="CENTER" layoutX="164.0" layoutY="321.0" mnemonicParsing="false" onAction="#onSwitch2Click" prefHeight="46.0" prefWidth="117.0" text="Ver historial de conversiones" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" />
+   <Button fx:id="btnHistorial" alignment="CENTER" contentDisplay="CENTER" layoutX="194.0" layoutY="321.0" mnemonicParsing="false" onAction="#onSwitch2Click" prefHeight="46.0" prefWidth="117.0" text="Ver historial de conversiones" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" />
    <Label layoutX="46.0" layoutY="103.0" text="Monto: ">
       <font>
          <Font size="14.0" />
@@ -33,13 +33,13 @@
          <Font size="14.0" />
       </font>
    </Label>
-   <ComboBox fx:id="currencyOneBox" layoutX="157.0" layoutY="154.0" prefHeight="25.0" prefWidth="124.0" />
-   <ComboBox fx:id="currencyTwoBox" layoutX="157.0" layoutY="250.0" prefHeight="25.0" prefWidth="124.0" />
+   <ComboBox fx:id="currencyOneBox" layoutX="157.0" layoutY="154.0" prefHeight="25.0" prefWidth="154.0" promptText="Seleccionar moneda" />
+   <ComboBox fx:id="currencyTwoBox" layoutX="157.0" layoutY="250.0" prefHeight="25.0" prefWidth="154.0" promptText="Seleccionar moneda" />
    <ImageView fitHeight="204.0" fitWidth="211.0" layoutX="350.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
       <Image url="@images/logo.jpg" />
    </ImageView>
-   <Button fx:id="btnExchange" layoutX="177.0" layoutY="200.0" mnemonicParsing="false" text="Intercambiar" />
-   <Button fx:id="btnConvert" alignment="CENTER" contentDisplay="CENTER" layoutX="44.0" layoutY="321.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="87.0" text="Convertir" textAlignment="CENTER" />
+   <Button fx:id="btnExchange" layoutX="193.0" layoutY="200.0" mnemonicParsing="false" onAction="#onExchangeClick" text="Intercambiar" />
+   <Button fx:id="btnConvert" alignment="CENTER" contentDisplay="CENTER" layoutX="44.0" layoutY="321.0" mnemonicParsing="false" onAction="#convertCurrency" prefHeight="46.0" prefWidth="87.0" text="Convertir" textAlignment="CENTER" />
    <Label fx:id="resultLabel" alignment="CENTER" layoutX="368.0" layoutY="327.0" prefHeight="35.0" prefWidth="168.0" text="Label" textAlignment="CENTER" wrapText="true">
       <font>
          <Font size="24.0" />
