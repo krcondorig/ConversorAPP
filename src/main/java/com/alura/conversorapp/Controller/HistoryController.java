@@ -5,7 +5,6 @@ import com.alura.conversorapp.Model.History;
 import com.alura.conversorapp.Model.SceneSwitch;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -16,22 +15,19 @@ import java.io.IOException;
 import java.util.List;
 
 public class HistoryController {
-    public TableColumn colFecha;
-    public TableColumn colHora;
-    public TableColumn colMonedaOrigen;
-    public TableColumn colMonedaDestino;
-    public TableColumn colMonto;
-    public TableColumn colConvertido;
+    public TableColumn<History, String> colFecha;
+    public TableColumn<History, String> colHora;
+    public TableColumn<History, String> colMonedaOrigen;
+    public TableColumn<History, String> colMonedaDestino;
+    public TableColumn<History, String> colMonto;
+    public TableColumn<History, String> colConvertido;
     public TableView<History> tablaHistorial;
     @FXML
     private Pane scene2Pane;
 
-    private List<History> historyList;
-
     public void initialize() {
         List<History> historyList = MainViewController.getHistoryList();
-        System.out.println(historyList);
-        // Configurar las celdas de la tabla para mostrar las historias
+        // Configurar las celdas de la tabla para mostrar los historiales
         colFecha.setCellValueFactory(new PropertyValueFactory<>("date"));
         colHora.setCellValueFactory(new PropertyValueFactory<>("time"));
         colMonedaOrigen.setCellValueFactory(new PropertyValueFactory<>("currencyFrom"));
@@ -42,13 +38,10 @@ public class HistoryController {
         // Configurar la tabla con la lista de historias
         ObservableList<History> observableList = FXCollections.observableArrayList(historyList);
         tablaHistorial.setItems(observableList);
-
     }
 
-    public void onSwitch1Click(ActionEvent actionEvent) throws IOException {
-        new SceneSwitch(scene2Pane, "MainView.fxml");
+    public void onSwitch1Click() throws IOException {
+        new SceneSwitch(scene2Pane, "View/MainView.fxml");
     }
-
-
 
 }

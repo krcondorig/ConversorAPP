@@ -1,18 +1,18 @@
 package com.alura.conversorapp.Model;
 
+import java.math.BigDecimal;
 import java.time.LocalDate;
-import java.time.LocalTime;
 
 public class History {
     private String currencyFrom;
     private String currencyTo;
     private double amount;
-    private double result;
+    private BigDecimal result;
     private String time;
     private LocalDate date;
 
 
-    public History(String currencyFrom, String currencyTo, double amount, double result, String time, LocalDate date) {
+    public History(String currencyFrom, String currencyTo, double amount, BigDecimal result, String time, LocalDate date) {
         this.currencyFrom = currencyFrom;
         this.currencyTo = currencyTo;
         this.amount = amount;
@@ -45,12 +45,12 @@ public class History {
         this.amount = amount;
     }
 
-    public double getResult() {
+    public BigDecimal getResult() {
         return result;
     }
 
     public void setResult(double result) {
-        this.result = result;
+        this.result = BigDecimal.valueOf(result);
     }
 
     public String getTime() {
