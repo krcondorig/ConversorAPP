@@ -2,7 +2,7 @@
 <h2> Challenge Oracle One Next education </h2>
 Esta es una aplicación Java que facilita la conversión de monedas a través de solicitudes a una API externa. Esta aplicación cuenta con una interfaz gráfica que permite al usuario realizar todas las operaciones de conversión de manera intuitiva y sencilla. Esta aplicacion permite ver un registro de conversiones realizadas.
     
-<p> Imagenes de muestra del funcionamiento de la app  </p>
+<br> Imagenes de muestra del funcionamiento de la app  </br>
 
 ![1](https://github.com/krcondorig/ConversorMonedas-ONE/assets/38484885/80b1e4ec-30c7-4b17-b36e-9196955e877e)
 
