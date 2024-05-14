@@ -53,12 +53,11 @@ public class MainViewController {
 
 
     public void onExchangeClick() {
-        String temp = currencyOne;
-        currencyOne = currencyTwo;
-        currencyTwo = temp;
+        currencyOne = currencyOneBox.getValue();
+        currencyTwo = currencyTwoBox.getValue();
 
-        currencyOneBox.setValue(currencyOne);
-        currencyTwoBox.setValue(currencyTwo);
+        currencyOneBox.setValue(currencyTwo);
+        currencyTwoBox.setValue(currencyOne);
     }
 
     public void convertCurrency() {

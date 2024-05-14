@@ -4,6 +4,8 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
@@ -13,8 +15,15 @@
          <Font name="Arial Bold" size="24.0" />
       </font>
    </Label>
-   <Button layoutX="36.0" layoutY="37.0" mnemonicParsing="false" onAction="#onSwitch1Click" text="Regresar" />
-   <TableView fx:id="tablaHistorial" layoutX="36.0" layoutY="88.0" prefHeight="290.0" prefWidth="528.0">
+   <Button focusTraversable="false" layoutX="36.0" layoutY="37.0" mnemonicParsing="false" onAction="#onSwitch1Click" prefHeight="28.0" prefWidth="28.0">
+      <graphic>
+         <ImageView fitHeight="20.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../images/atras.png" />
+            </image>
+         </ImageView>
+      </graphic></Button>
+   <TableView fx:id="tablaHistorial" focusTraversable="false" layoutX="36.0" layoutY="88.0" prefHeight="290.0" prefWidth="528.0">
      <columns>
        <TableColumn fx:id="colFecha" prefWidth="75.0" text="Fecha" />
        <TableColumn fx:id="colHora" prefWidth="75.0" text="Hora" />
